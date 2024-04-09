@@ -12,8 +12,19 @@ public abstract class Algoritmos
 		int numTotal = 0;
 		for (int i = 0; i < numero; i++)
 		{
-			numTotal += (numero + i);
+			numTotal += (1 + i);
 		}
 		return numTotal;
 	}
+	
+	public static int factorial(int numero) 
+	{
+	    int numTotal = 1;
+	    for (int i = 1; i <= numero; i++)
+	    {
+	        numTotal *= i;
+	    }
+	    return numTotal;
+	}
+
 }
