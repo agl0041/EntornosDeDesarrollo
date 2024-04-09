@@ -7,7 +7,7 @@ public class Triangulo
 	
     public Triangulo () 
     {
-    	this.base =5;
+    	this.base = 5;
     	this.altura=10;
     }
     
@@ -39,6 +39,6 @@ public class Triangulo
 
     public int  getarea() 
     {
-        return altura/2;
+        return (base*altura)/2;
     }
 }

@@ -21,7 +21,7 @@ public class Circulo
 
     public int  getarea() 
     {
-        return (int) (Radio*Math.PI);
+        return (int) (Math.PI*(Radio^2));
     }
 
     public int getperimetro() 

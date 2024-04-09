@@ -1,9 +1,19 @@
 package Figuras;
 
-public class Rectangulo 
+/*
+ * Clase Rectangulo. Permite crear rectangulos y calcular su area y perimetro 
+ * 
+ * @author Alvaro
+ */
+
+public class Rectangulo extends Figura
 {
 	private int base;
     private int  altura;
+    
+    /*
+     * Constructor por defecto. Crea un rectangulo con base y altura 1, en metros
+     */
 
     public  Rectangulo() 
     {
@@ -11,6 +21,13 @@ public class Rectangulo
         this.altura = 1;
      
     }
+    
+    /*
+     * Constructor que crea un rectangulo con la basey la altura especificadas, en metros
+     * 
+     * @param base	la base del rectangulo, en metros
+     * @parem altura	la altura del rectangulo, en metros
+     */
     
     public Rectangulo(int base, int altura) 
     {
@@ -47,6 +64,26 @@ public class Rectangulo
     public int getperimetro() 
     {        
         return 2*base + 2*altura;
+    }
+    
+    /*
+     * @see modelos.Figura#area()
+     */
+    
+    @Override
+    public double area()
+    {
+    	return this.base * this.altura;
+    }
+    
+    /*
+     * @see modelos.Figura#perimetro()
+     */
+    
+    @Override
+    public double perimetro()
+    {
+    	return 2*base + 2*altura;
     }
 
 }
